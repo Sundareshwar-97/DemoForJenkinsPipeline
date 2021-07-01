@@ -3,3 +3,4 @@ def even(a):
         print("it  is even")
     else:
         print("it is odd")
+print (NAME)         
