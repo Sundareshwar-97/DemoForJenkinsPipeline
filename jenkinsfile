@@ -1,15 +1,19 @@
 pipeline{
     agent any
+    environment{
+        NAME="Sundar"
+    } 
 
     stages{
         stage('Python'){
-        steps{    echo $scriptpy.py
+        steps{    
+            sh "$scriptpy.py"
         }
         }
     }
     stage('Shell'){
         steps{
-            echo $script.sh
+            sh "./$script.sh"
         }
 
     }
