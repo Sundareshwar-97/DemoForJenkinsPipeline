@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('Python'){
+        steps{    echo $scriptpy.py
+        }
+        }
+    }
+    stage('Shell'){
+        steps{
+            echo $script.sh
+        }
+
+    }
+
+}
