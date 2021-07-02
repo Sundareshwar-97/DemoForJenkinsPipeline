@@ -8,14 +8,14 @@ pipeline{
         stage('Python'){
         steps{    
             sh "scriptpy.py"
+              }
         }
-        }
-    }
+    
     stage('Shell'){
         steps{
             sh "./$script.sh"
         }
-
+    }
     }
 
 }
