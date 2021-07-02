@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('Python'){
         steps{    
-            sh "$scriptpy.py"
+            sh "scriptpy.py"
         }
         }
     }
