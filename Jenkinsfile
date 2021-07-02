@@ -13,7 +13,7 @@ pipeline{
     
     stage('Shell'){
         steps{
-            sh "./$script.sh"
+            sh "./script.sh"
         }
     }
     }
